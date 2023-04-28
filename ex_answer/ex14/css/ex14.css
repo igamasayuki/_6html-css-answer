@@ -8,7 +8,7 @@ body{
 }
 
 /*htmlにdivタグのid=containerを追加してから*/
-div#container{
+#container{
 	background-color:#ffffff; /*背景を白に*/
 	width:700px; /*横幅指定 好きな値で良い*/
 	margin:0 auto; /*中央揃え*/
@@ -19,11 +19,17 @@ div#container{
  写真にclass="okierabu"を追加してから
  idでも良いが今回あえてclassにする
 */
-img.okierabu{
-	float:right;/*画像を右側へ leftでも試す*/
-	margin:0 0 0 30px; /*画像左の文字との間隔を空ける paddingでも同じだった*/
+.okierabu{
+	/* float:right; *//*画像を右側へ leftでも試す*/
+	width:200px;
+	height:150px;
+	margin:10px 0 0 30px; /*上と左の文字との間隔を空ける paddingでも同じだった*/
 }
 
+.overview{
+	display: flex;
+	flex-direction: row-reverse;
+}
 p{
 	line-height:1.5em; /*150%でも同じ*/
 	text-indent:1em; /*インデントを1文字分下げる*/
